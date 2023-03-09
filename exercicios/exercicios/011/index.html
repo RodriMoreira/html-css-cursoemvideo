@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>011</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente mudar o tamanho do navegador ou acessar de outros dispositivos </p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <!--Tag PICTURE serve para configurar o source da imagem.
+        Source Media Type foi o utilizado, usar MAX WIDTH, sempre 50px a mais que o tamanho da imagem, seguir a ordem de MENOR para MAIOR-->
+
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audio</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/dancing.mp3" type="audio/mpeg">
+        <source src="midia/dancing.ogg" type="audio/ogg">
+        <source src="midia/dancing.wav" type="audio/wav">
+    </audio>
+    <!--TYPES; mp3 = audio/mpeg
+            ogg = audio/ogg
+            wav = audio/wav-->
+    <!--NÃO usar arquivos WAV, são muito pesados-->
+</body>
+</html>

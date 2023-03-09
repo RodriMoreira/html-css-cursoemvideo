@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1{ /*Box-level*/
+      
+      background-color: lightgray;
+      height: 300px;
+      width: 300px;
+
+      border: 10px solid red ;
+
+      padding: 10px;
+      margin: 10px 10px 60px 10px;
+      /*
+        MARGIN AUTO PARA CENTRALIZAR A BOX
+        É possivel usar por ex:
+        margin: 10px auto 10px auto
+        centralizando horizontalmente apenas
+      */
+
+      /* 
+      1 VALOR = configuração para os 4 lados
+
+      2 VALORES = O primeiro vai ser cima/baixo o segundo esquerda/direita
+
+      4 VALORES = valores individuais, seguindo a ordem top > right > bottom > left  
+
+      */
+      outline: 10px solid green;
+    }
+  </style>
+</head>
+<body>
+  <h1>exemplo de box-level</h1>
+  <p>outro box level, mas os <a href="#"> links são inline-level</a> top demais</p>
+</body>
+</html>
